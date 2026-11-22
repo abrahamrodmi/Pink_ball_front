@@ -3,9 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f4f6f8;
   font-family: system-ui, -apple-system, sans-serif;
   padding: 1.5rem;
+
+  /* Imagen de fondo con una capa oscura suave para que el cuadro resalte */
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)),
+    url('/portada.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card {
