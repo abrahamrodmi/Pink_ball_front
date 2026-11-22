@@ -18,7 +18,7 @@ interface PredictionResponse {
 })
 export class App {
   private http = inject(HttpClient);
-  private readonly apiUrl = 'https://pink-ball-api.onrender.com/predict';
+  private readonly apiUrl = 'https://pink-ball-api.onrender.com/predict/';
 
   selectedFile = signal<File | null>(null);
   imagePreview = signal<string | null>(null);
