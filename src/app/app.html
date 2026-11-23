@@ -1,21 +1,19 @@
 <main class="container">
-  <div class="header">
-  <h1>PINK BALL DETECTOR</h1>
-  <h2>Clasificación de imágenes en Kirby, Jigglypuff o Wigglytuff utilizando características HOG y un clasificador KNN.</h2>
-</div>
-
-<div class="upload-section">
-  <label for="fileInput" class="file-label">
-    {{ selectedFile() ? selectedFile()?.name : 'Seleccionar imagen...' }}
-  </label>
-  <input
-    id="fileInput"
-    type="file"
-    accept="image/*"
-    (change)="onFileSelected($event)"
-    hidden
-  />
-</div>
+  <section class="card">
+    <h1>PINK BALL</h1>
+    <h2>Clasificación de imágenes en Kirby, Jigglypuff o Wigglytuff utilizando características HOG y un clasificador KNN.</h2>
+    <div class="upload-section">
+      <label for="fileInput" class="file-label">
+        {{ selectedFile() ? selectedFile()?.name : 'Seleccionar imagen...' }}
+      </label>
+      <input
+        id="fileInput"
+        type="file"
+        accept="image/*"
+        (change)="onFileSelected($event)"
+        hidden
+      />
+    </div>
 
     @if (imagePreview()) {
       <div class="preview-container">
@@ -45,5 +43,5 @@
         placeholder="Los porcentajes y probabilidades aparecerán aquí..."
       ></textarea>
     </div>
- 
+  </section>
 </main>

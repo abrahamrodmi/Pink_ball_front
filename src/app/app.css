@@ -28,12 +28,6 @@
   gap: 1.25rem;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  text-align: center;
-}
 
 h1 {
   margin: 0;
